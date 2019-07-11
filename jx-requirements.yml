@@ -14,7 +14,7 @@ ingress:
   tls:
     email: terry@bootstrap.je
     enabled: true
-    production: false
+    production: true
 kaniko: true
 secretStorage: local
 storage:
