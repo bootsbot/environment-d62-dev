@@ -13,7 +13,7 @@ ingress:
   externalDNS: true
   tls:
     email: terry@bootstrap.je
-    enabled: true
+    enabled: false
     production: true
 kaniko: true
 secretStorage: local
@@ -27,3 +27,4 @@ storage:
   repository:
     enabled: true
     url: gs://d58-repository-6421f929-1504-47e8-8979-c5d3a1c04f33
+webhook: prow
