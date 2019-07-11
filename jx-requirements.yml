@@ -1,29 +1,29 @@
 cluster:
-  clusterName: ""
-  environmentGitOwner: ""
-  project: ""
+  clusterName: d58
+  environmentGitOwner: bootstrap-labs
+  project: jx-mar19
   provider: gke
-  zone: ""
+  zone: europe-west1-d
 environments:
 - key: dev
 - key: staging
 - key: production
 ingress:
-  domain: ""
-  externalDNS: false
+  domain: kill-9.uk
+  externalDNS: true
   tls:
-    email: ""
-    enabled: false
+    email: terry@bootstrap.je
+    enabled: true
     production: false
 kaniko: true
 secretStorage: local
 storage:
   logs:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://d58-logs-24366b07-aaea-4fc3-9344-2ffa6467ad7e
   reports:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://d58-reports-62dc2fda-8f37-4c31-9bd2-c0bf59f54eba
   repository:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://d58-repository-6421f929-1504-47e8-8979-c5d3a1c04f33
