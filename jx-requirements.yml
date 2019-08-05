@@ -1,31 +1,39 @@
 cluster:
   clusterName: d60
   environmentGitOwner: bootstrap-labs
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: jx
   project: jx-mar19
   provider: gke
   zone: europe-west1-d
-gitops: true
 environments:
 - key: dev
 - key: staging
 - key: production
+gitops: true
 ingress:
   domain: kill-9.uk
   externalDNS: true
+  namespaceSubDomain: -jx.
   tls:
     email: terry@bootstrap.je
-    enabled: true
+    enabled: false
     production: true
 kaniko: true
-secretStorage: vault
+secretStorage: local
 storage:
   logs:
     enabled: true
-    url: ""
+    url: gs://d60-logs-343bcd66-0039-4442-94aa-7892bff5abbc
   reports:
     enabled: true
-    url: ""
+    url: gs://d60-reports-b0790d92-3ed9-4c2f-86b3-60df51a9783d
   repository:
     enabled: true
-    url: ""
+    url: gs://d60-repository-809717e4-e5e4-4731-b671-20efd4383ad3
+versionStream:
+  ref: v1.0.0
+  url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: prow
