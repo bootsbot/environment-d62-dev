@@ -1,5 +1,5 @@
 cluster:
-  clusterName: d60
+  clusterName: d62
   environmentGitOwner: bootstrap-labs
   gitKind: github
   gitName: github
@@ -26,13 +26,13 @@ secretStorage: local
 storage:
   logs:
     enabled: true
-    url: gs://d60-logs-343bcd66-0039-4442-94aa-7892bff5abbc
+    url: gs://d62-logs-01412c66-f67b-4c9f-b673-ebe2a29f9de2
   reports:
     enabled: true
-    url: gs://d60-reports-b0790d92-3ed9-4c2f-86b3-60df51a9783d
+    url: gs://d62-reports-60ee26d8-f02a-41f9-a80a-32cb6ad0578e
   repository:
     enabled: true
-    url: gs://d60-repository-809717e4-e5e4-4731-b671-20efd4383ad3
+    url: gs://d62-repository-2f191e7d-f5b5-4c97-a499-a13c4f1a5b6e
 versionStream:
   ref: v1.0.0
   url: https://github.com/jenkins-x/jenkins-x-versions.git
